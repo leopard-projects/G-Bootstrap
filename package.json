@@ -23,11 +23,13 @@
     "@ngrx/effects": "^11.1.0",
     "@ngrx/store": "^11.1.0",
     "bootstrap": "^4.6.0",
+    "classlist.js": "^1.1.20150312",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "w-brew": "file:./dist/w-brew",
+    "web-animations-js": "^2.3.2",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {

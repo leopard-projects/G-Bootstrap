@@ -168,5 +168,8 @@
       }
     }
   },
-  "defaultProject": "w-brew"
+  "defaultProject": "w-brew",
+  "cli": {
+    "analytics": "860cc989-ef93-4c55-9ea0-d54c5cd4b6ed"
+  }
 }
