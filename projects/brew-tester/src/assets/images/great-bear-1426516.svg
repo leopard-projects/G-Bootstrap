@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 841.9 595.3" version="1.1" viewBox="0 0 841.9 595.3" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.st0{fill:#2C3E50;}
+	.st1{fill:#202F3B;}
+	.st2{fill:#FFFFFF;}
+</style>
+<rect class="st0" width="841.9" height="595.3"/>
+<path class="st1" d="m841.9 595.3v-314.8c-33.4 34.3-68 98.1-98.3 71.6-36-31.5-66-15-108 16.5s-84-31.5-145.5-87-93 3-114 16-118.5 99.4-154.5 87.4-90-75-118.5-87.4-103.1 87.5-103.1 87.5v210.2h841.9z"/>
+	<circle class="st2" cx="306" cy="71.9" r="2.8"/>
+	<circle class="st2" cx="442.8" cy="180.7" r="2.8"/>
+	<circle class="st2" cx="350.2" cy="76.8" r="2.8"/>
+	<circle class="st2" cx="393.8" cy="98.7" r="2.8"/>
+	<circle class="st2" cx="436.8" cy="131.7" r="2.8"/>
+	<circle class="st2" cx="517.8" cy="202.7" r="2.8"/>
+	<circle class="st2" cx="535.8" cy="140.7" r="2.8"/>
+</svg>

@@ -1,0 +1,172 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "w-brew": {
+      "projectType": "library",
+      "root": "projects/w-brew",
+      "sourceRoot": "projects/w-brew/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/w-brew/tsconfig.lib.json",
+            "project": "projects/w-brew/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/w-brew/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/w-brew/src/test.ts",
+            "tsConfig": "projects/w-brew/tsconfig.spec.json",
+            "karmaConfig": "projects/w-brew/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/w-brew/tsconfig.lib.json",
+              "projects/w-brew/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "brew-tester": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/brew-tester",
+      "sourceRoot": "projects/brew-tester/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/brew-tester",
+            "index": "projects/brew-tester/src/index.html",
+            "main": "projects/brew-tester/src/main.ts",
+            "polyfills": "projects/brew-tester/src/polyfills.ts",
+            "tsConfig": "projects/brew-tester/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/brew-tester/src/favicon.ico",
+              "projects/brew-tester/src/assets"
+            ],
+            "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "projects/brew-tester/src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/brew-tester/src/environments/environment.ts",
+                  "with": "projects/brew-tester/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "brew-tester:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "brew-tester:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "brew-tester:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/brew-tester/src/test.ts",
+            "polyfills": "projects/brew-tester/src/polyfills.ts",
+            "tsConfig": "projects/brew-tester/tsconfig.spec.json",
+            "karmaConfig": "projects/brew-tester/karma.conf.js",
+            "assets": [
+              "projects/brew-tester/src/favicon.ico",
+              "projects/brew-tester/src/assets"
+            ],
+            "styles": [
+              "projects/brew-tester/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/brew-tester/tsconfig.app.json",
+              "projects/brew-tester/tsconfig.spec.json",
+              "projects/brew-tester/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/brew-tester/e2e/protractor.conf.js",
+            "devServerTarget": "brew-tester:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "brew-tester:serve:production"
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "w-brew"
+}

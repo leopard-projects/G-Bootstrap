@@ -1,0 +1,33 @@
+<section id="carousel">
+  <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li
+        data-target="#carousel-example-generic"
+        *ngFor="let slide of slides;let i=index;"
+        attr.data-slide-to="i" [ngClass]="{'active': slide.isActive}"
+      ></li>
+
+      <!-- <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div *ngFor="let slide of slides;" [ngClass]="{'carousel-item': slide, 'active': slide.isActive}">
+        <img [src]="slide.image.path" alt="{{slide.image.altText}}">
+        <div class="carousel-caption">
+          <h1>{{slide.headingText}}</h1>
+          <p>{{slide.subheadingText}}</p>
+        </div>
+      </div>
+    </div>
+    <a href="#carousel-home" class="carousel-control-prev" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a href="#carousel-example-generic" role="button" class="carousel-control-next" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>

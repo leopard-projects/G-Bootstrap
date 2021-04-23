@@ -1,0 +1,25 @@
+img {
+	max-width: 100%;
+}
+
+#cover {
+	/* // background: #222 url('../../../assets/images/great-bear-1426516.svg') center center no-repeat; */
+	// background-size: cover;
+	color: white;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+#cover-caption {
+	width: 100%;
+}
+
+.section-content {
+	padding: 5rem 0;
+}
+
+.center-align {
+  justify-content: center;
+}

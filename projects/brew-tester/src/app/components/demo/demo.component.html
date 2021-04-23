@@ -1,0 +1,40 @@
+<!-- <lib-promotion [promotion]="promotion"></lib-promotion> -->
+<lib-promotion
+  *ngIf="promotion && (!promotion.isRegistered || promotion.isRegistered === undefined)"
+  [promotion]="promotion"
+  (otPromotion)="promotionReverse($event)"
+></lib-promotion>
+
+<lib-navigation></lib-navigation>
+
+<lib-carousel
+  *ngIf="carousel"
+  [slides]="carousel"
+></lib-carousel>
+
+<lib-wide-container
+  *ngIf="wideContainer"
+  [widedata]="wideContainer"
+></lib-wide-container>
+
+<lib-wide-container
+  *ngIf="middleWideContainer"
+  [widedata]="middleWideContainer"
+></lib-wide-container>
+
+<lib-full-wide-container
+  *ngIf="fullWideContainer"
+  [fullWideContent]="fullWideContainer"
+></lib-full-wide-container>
+
+
+<lib-wide-container
+  *ngIf="bottomWideContainer"
+  [widedata]="bottomWideContainer"
+></lib-wide-container>
+<!-- <input type="file" accept="image/*"> -->
+
+<a
+  [routerLink]="['aboutus']"
+><h2>Link Test</h2></a>
+

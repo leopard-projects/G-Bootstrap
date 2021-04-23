@@ -1,0 +1,59 @@
+
+  <section
+    id="cover"
+    [style]="
+      'background: url(' +
+      promotion?.backgroundImageUrl +
+      ') center center no-repeat; background-size: cover;'
+    "
+  >
+    <div id="cover-caption">
+      <div class="container">
+        <div class="col-sm-12">
+          <h1 class="display-3">{{ promotion?.heading }}</h1>
+          <p>{{ promotion?.subHeading }}</p>
+          <div *ngIf="promotionForm">
+            <form
+              class="form-inline center-align"
+              [formGroup]="promotionForm"
+              (ngSubmit)="onSubmit()"
+            >
+              <div *ngFor="let controlKey of keys">
+                <div *ngFor="let control of promotionForm.controls | keyvalue">
+                  <div *ngIf="controlKey === control.key">
+                    <label for="inlineFormInputName2" class="sr-only">
+                      {{ control.key | titlecase }}
+                    </label>
+
+                    <input
+                      type="text"
+                      class="form-control mb-2 mr-sm-2"
+                      id="{{ control.key }}"
+                      placeholder="Enter {{ control.key | titlecase }}"
+                      formControlName="{{ control.key }}"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
+            <input type="email" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="deo.jane@gmail.com"> -->
+              <div>
+                <button type="submit" class="btn btn-primary mb-2">
+                  {{ promotion?.formPrimaryButton }}
+                </button>
+              </div>
+            </form>
+          </div>
+          <br />
+          <a
+            href="#nav-main"
+            class="btn btn-sm"
+            style="color: #fff; border-color:#fff;"
+            role="button"
+            >&darr;</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+

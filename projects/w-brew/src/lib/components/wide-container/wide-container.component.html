@@ -1,0 +1,47 @@
+<section *ngIf="widedata"
+  id="feature-three"
+  [style.background-color]="widedata?.colorModel?.backGroundColor"
+  [style.color]="widedata?.colorModel?.textColor"
+ >
+  <div class="container">
+    <div class="row" *ngIf="widedata?.content?.sectionAlignLeft === false">
+        <div class="d-none d-lg-block col-lg-6">
+          <img [src]="widedata?.image?.path" alt="{{widedata?.image?.altText}}">
+        </div>
+        <div class="col-lg-5 col-lg-offset-1 content">
+          <h6>{{widedata?.content?.titleOfHeading}}</h6>
+          <h2>{{widedata?.content?.title}}</h2>
+          <p class="lead" [innerHtml]="widedata?.content?.description"></p>
+
+          <a
+            *ngIf="widedata && widedata.c2a"
+            [href]="widedata?.c2a?.url" role="button"
+            class="btn btn-lg"
+            [style.backgorund]="widedata?.colorModel?.backGroundColor"
+            [style.color]="widedata?.colorModel?.textColor"
+            [style.border-color]="widedata?.colorModel?.textColor"
+          >{{widedata?.c2a?.label}}</a>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="widedata?.content?.sectionAlignLeft === true">
+      <div class="col-lg-5 col-lg-offset-1 content">
+        <h6>{{widedata?.content?.titleOfHeading}}</h6>
+        <h2>{{widedata?.content?.title}}</h2>
+        <p class="lead" [innerHtml]="widedata?.content?.description"></p>
+
+        <a
+          *ngIf="widedata && widedata.c2a"
+          [href]="widedata?.c2a?.url" role="button"
+          class="btn btn-lg"
+          [style.backgorund]="widedata?.colorModel?.backGroundColor"
+          [style.color]="widedata?.colorModel?.textColor"
+          [style.border-color]="widedata?.colorModel?.textColor"
+        >{{widedata?.c2a?.label}}</a>
+      </div>
+      <div class="d-none d-lg-block col-lg-6">
+        <img [src]="widedata?.image?.path" alt="{{widedata?.image?.altText}}">
+      </div>
+  </div>
+  </div>
+</section>
