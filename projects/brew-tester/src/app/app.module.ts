@@ -13,12 +13,14 @@ import { DemoComponent } from './components/demo/demo.component';
 import { LinktestComponent } from './components/linktest/linktest.component';
 import { CarouselEffect } from './store/carousel/carousel.effect';
 import { carouselReducer } from './store/carousel/carousel.reducer';
+import { PromotionhookComponent } from './components/promotionhook/promotionhook.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DemoComponent,
-    LinktestComponent
+    LinktestComponent,
+    PromotionhookComponent
   ],
   imports: [
     BrowserModule,

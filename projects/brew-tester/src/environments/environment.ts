@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   api: {
     promotion: '../../assets/mock-api/promotion.json',
-    carousel: '../../assets/mock-api/carousel.json'
+    carousel: '../../assets/mock-api/carousel.json',
+    widecontainerone: '../../assets/mock-api/wide-container-one.json'
   }
 };
 

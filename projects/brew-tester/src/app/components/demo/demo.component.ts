@@ -13,8 +13,6 @@ import {
   FullWideModel
 } from 'w-brew';
 
-import { PromotionService } from '../../services/promotion.service';
-import * as PromotionActions from '../../store/promotion/promotion.action';
 import * as CarouselActions from '../../store/carousel/carousel.action';
 
 @Component({
@@ -33,7 +31,6 @@ export class DemoComponent implements OnInit {
   fullWideContainer?: FullWideModel;
 
   constructor(
-    private promotionService: PromotionService,
     private store: Store<{
       promotion: {promotion: Promotion},
       carousel: {slides: Carousel[]}
@@ -43,15 +40,6 @@ export class DemoComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    this.store.select('promotion').subscribe( (data: { promotion: Promotion }) => {
-      this.promotion = data.promotion;
-      if ( this.promotion
-        && Object.keys(this.promotion).length === 0
-        && this.promotion.constructor === Object ) {
-          this.promotion = undefined;
-          this.store.dispatch(new PromotionActions.FetchPromotion());
-      }
-    });
 
     this.store.select('carousel').subscribe((response: { slides: Carousel[] }) => {
       if (response && response.slides && response.slides.length > 0 ) {
@@ -60,6 +48,7 @@ export class DemoComponent implements OnInit {
         this.store.dispatch(new CarouselActions.FetchCarousel());
       }
     });
+
     let colorModel = new ColorModel('#FFFF', 'black');
     let image = new Image('../../../assets/images/macbook.png', 'macbook');
     let c2a = new ClickToAction('Git\'r done!', 'www.google.com');
@@ -113,10 +102,5 @@ export class DemoComponent implements OnInit {
 
     // console.log('this.bottomWideContaine : ', this.bottomWideContainer);
 
-  }
-
-  promotionReverse(event:any) {
-    const promotionData: Promotion = event;
-    this.store.dispatch(new PromotionActions.SetPromotion(promotionData));
   }
 }

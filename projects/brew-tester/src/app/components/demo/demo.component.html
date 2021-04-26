@@ -1,11 +1,4 @@
 <!-- <lib-promotion [promotion]="promotion"></lib-promotion> -->
-<lib-promotion
-  *ngIf="promotion && (!promotion.isRegistered || promotion.isRegistered === undefined)"
-  [promotion]="promotion"
-  (otPromotion)="promotionReverse($event)"
-></lib-promotion>
-
-<lib-navigation></lib-navigation>
 
 <lib-carousel
   *ngIf="carousel"
@@ -32,9 +25,3 @@
   *ngIf="bottomWideContainer"
   [widedata]="bottomWideContainer"
 ></lib-wide-container>
-<!-- <input type="file" accept="image/*"> -->
-
-<a
-  [routerLink]="['aboutus']"
-><h2>Link Test</h2></a>
-

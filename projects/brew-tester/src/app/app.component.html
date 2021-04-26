@@ -1,3 +1,16 @@
 
 <!-- <app-demo></app-demo> -->
+
+<app-promotionhook *ngIf="isPromotionToDisplay"></app-promotionhook>
+
+<lib-navigation *ngIf="navigation"
+  [navigationStructure]="navigation"
+  (navigationTriggerred)="triggeredNavigation($event)"
+></lib-navigation>
 <router-outlet></router-outlet>
+<!-- <app-demo></app-demo> -->
+
+<lib-footer></lib-footer>
+
+
+

@@ -7,6 +7,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { WideContainerComponent } from './components/wide-container/wide-container.component';
 import { FullWideContainerComponent } from './components/full-wide-container/full-wide-container.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 
 
 
@@ -17,7 +19,9 @@ import { FullWideContainerComponent } from './components/full-wide-container/ful
     CarouselComponent,
     NavigationComponent,
     WideContainerComponent,
-    FullWideContainerComponent
+    FullWideContainerComponent,
+    FooterComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,9 @@ import { FullWideContainerComponent } from './components/full-wide-container/ful
     CarouselComponent,
     NavigationComponent,
     WideContainerComponent,
-    FullWideContainerComponent
+    FullWideContainerComponent,
+    FooterComponent,
+    PagenotfoundComponent
   ]
 })
 export class WBrewModule { }
