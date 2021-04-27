@@ -15,6 +15,8 @@ import {
 
 import * as CarouselActions from '../../store/carousel/carousel.action';
 
+import { environment } from '../../../environments/environment';
+
 @Component({
   selector: 'app-demo',
   templateUrl: './demo.component.html',
@@ -50,7 +52,7 @@ export class DemoComponent implements OnInit {
     });
 
     let colorModel = new ColorModel('#FFFF', 'black');
-    let image = new Image('../../../assets/images/macbook.png', 'macbook');
+    let image = new Image(environment.api.macbook, 'macbook');
     let c2a = new ClickToAction('Git\'r done!', 'www.google.com');
     let titleOfHeading = 'The wow factor';
     let title = 'Australians wouldn\'t give a Startup.logo for anything else.';
@@ -60,7 +62,7 @@ export class DemoComponent implements OnInit {
 
 
     let middleColorModel = new ColorModel('#f0f0f0', 'black');
-    let middleImage = new Image('../../../assets/images/brad-elvis.png', 'iPad');
+    let middleImage = new Image(environment.api.bradelvis, 'iPad');
     let middleC2a = new ClickToAction('Mangos!(or mangoes?)', 'www.google.com');
     let middleTitleOfHeading = 'Kudos';
     let middleTitle = '\"No Startup.logo, no kiss.\"';
@@ -70,7 +72,7 @@ export class DemoComponent implements OnInit {
 
 
     let bottomColorModel = new ColorModel('black', 'white');
-    let bottomImage = new Image('../../../assets/images/ipad.png', 'iPad');
+    let bottomImage = new Image(environment.api.ipad, 'iPad');
     let bottomC2a = new ClickToAction('Mangos!(or mangoes?)', 'www.google.com');
     let bottomTitleOfHeading = 'The all-in-one solution';
     let bottomTitle = 'Nobody doesn\'t like Startup.logo';
@@ -80,7 +82,7 @@ export class DemoComponent implements OnInit {
 
 
     let wideColorModel = new ColorModel('black', 'white');
-    let wideImage = new Image('../../../assets/images/macbook-2.png', 'Macbook...');
+    let wideImage = new Image(environment.api.macbook2, 'Macbook...');
 
     let wideTitleOfHeading = 'Powerfully packed action';
     let wideTitle = 'When it absolutely, positively has to be Startup.logo overnight.';

@@ -7,7 +7,11 @@ export const environment = {
   api: {
     promotion: '../../assets/mock-api/promotion.json',
     carousel: '../../assets/mock-api/carousel.json',
-    widecontainerone: '../../assets/mock-api/wide-container-one.json'
+    widecontainerone: '../../assets/mock-api/wide-container-one.json',
+    macbook: '../../../assets/images/macbook.png',
+    bradelvis: '../../../assets/images/brad-elvis.png',
+    ipad: '../../../assets/images/ipad.png',
+    macbook2: '../../../assets/images/macbook-2.png'
   }
 };
 

@@ -3,7 +3,7 @@
   "subHeading": "Just like the old Bootstrap, but better. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quis, necessitatibus molestias maiores accusantium alias veniam eum labore rerum earum.",
   "isForm": true,
   "formPrimaryButton": "Register",
-  "backgroundImageUrl": "http://localhost/assets/images/great-bear-1426516.svg",
+  "backgroundImageUrl": "../../../w-beta/assets/images/great-bear-1426516.svg",
   "controlConfiguration": {
     "name": "text",
     "email": "email"
