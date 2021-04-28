@@ -9,6 +9,8 @@ import { WideContainerComponent } from './components/wide-container/wide-contain
 import { FullWideContainerComponent } from './components/full-wide-container/full-wide-container.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { HorizontalCardComponent } from './components/horizontal-card/horizontal-card.component';
+import { FullCardComponent } from './components/full-card/full-card.component';
 
 
 
@@ -21,7 +23,9 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
     WideContainerComponent,
     FullWideContainerComponent,
     FooterComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    HorizontalCardComponent,
+    FullCardComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,9 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
     WideContainerComponent,
     FullWideContainerComponent,
     FooterComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    HorizontalCardComponent,
+    FullCardComponent
   ]
 })
 export class WBrewModule { }

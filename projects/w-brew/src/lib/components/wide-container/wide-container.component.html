@@ -4,7 +4,7 @@
   [style.color]="widedata?.colorModel?.textColor"
  >
   <div class="container">
-    <div class="row" *ngIf="widedata?.content?.sectionAlignLeft === false">
+    <div class="row" *ngIf="widedata?.content?.reverse === false">
         <div class="d-none d-lg-block col-lg-6">
           <img [src]="widedata?.image?.path" alt="{{widedata?.image?.altText}}">
         </div>
@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="row" *ngIf="widedata?.content?.sectionAlignLeft === true">
+    <div class="row" *ngIf="widedata?.content?.reverse === true">
       <div class="col-lg-5 col-lg-offset-1 content">
         <h6>{{widedata?.content?.titleOfHeading}}</h6>
         <h2>{{widedata?.content?.title}}</h2>

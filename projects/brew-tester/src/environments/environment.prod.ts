@@ -8,6 +8,9 @@ export const environment = {
     macbook: '../../../w-beta/assets/images/macbook.png',
     bradelvis: '../../../w-beta/assets/images/brad-elvis.png',
     ipad: '../../../w-beta/assets/images/ipad.png',
-    macbook2: '../../../w-beta/assets/images/macbook-2.png'
+    macbook2: '../../../w-beta/assets/images/macbook-2.png',
+    jeans: '../../../w-beta/assets/images/jeans.svg',
+    computer: '../../../w-beta/assets/images/computer.jpg',
+    stage: '../../../w-beta/assets/images/stage.jpg'
   }
 };

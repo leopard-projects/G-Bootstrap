@@ -15,6 +15,8 @@ export * from './lib/components/wide-container/wide-container.component';
 export * from './lib/components/full-wide-container/full-wide-container.component';
 export *  from './lib/components/footer/footer.component';
 export * from './lib/components/pagenotfound/pagenotfound.component';
+export * from './lib/components/horizontal-card/horizontal-card.component';
+export * from './lib/components/full-card/full-card.component';
 
 /** Export of models */
 export * from './lib/models/promotion.model';
@@ -28,6 +30,7 @@ export * from './lib/models/content.model';
 export * from './lib/models/full-wide.model';
 export * from './lib/models/navigation.model';
 export * from './lib/models/link.model';
+export * from './lib/models/card.model';
 
 /** Export of module */
 export * from './lib/w-brew.module';

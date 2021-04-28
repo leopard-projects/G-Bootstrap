@@ -1,3 +1,50 @@
-<h1>Link Tester!</h1>
-<a [routerLink]="['']">Go Back</a>
+
+<section style="background-color: lightgrey;" *ngIf="fullCardOne">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12" style="margin-top: 1rem;">
+        <lib-full-card [card]="fullCardOne"></lib-full-card>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section style="background-color: lightgrey;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 " style="margin-top: 1rem;">
+        <lib-horizontal-card
+          [content]="horizontalCardOne">
+        </lib-horizontal-card>
+      </div>
+      <div class="col-lg-6" style="margin-top: 1rem;">
+        <lib-horizontal-card
+          [content]="horizontalCardTwo">
+        </lib-horizontal-card>
+      </div>
+      <!-- <div class="col-lg-4" style="margin-top: 1rem;">
+        <lib-horizontal-card
+          [content]="horizontalCard">
+        </lib-horizontal-card>
+      </div> -->
+    </div>
+  </div>
+
+</section>
+
+<section style="background-color: lightgrey;" *ngIf="fullCardTwo">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12" style="margin-top: 1rem;">
+        <lib-full-card [card]="fullCardTwo"></lib-full-card>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!-- <h1>Link Tester!</h1>
+<a [routerLink]="['']">Go Back</a> -->
 

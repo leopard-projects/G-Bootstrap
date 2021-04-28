@@ -4,7 +4,8 @@ export class ContentModel {
     public titleOfHeading?: string,
     public title?: string,
     public description?: string,
-    public sectionAlignLeft?: boolean
+    public reverse?: boolean,
+    public bottomMutedText?: string
   ) {}
 
 }

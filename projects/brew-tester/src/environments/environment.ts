@@ -11,7 +11,10 @@ export const environment = {
     macbook: '../../../assets/images/macbook.png',
     bradelvis: '../../../assets/images/brad-elvis.png',
     ipad: '../../../assets/images/ipad.png',
-    macbook2: '../../../assets/images/macbook-2.png'
+    macbook2: '../../../assets/images/macbook-2.png',
+    jeans: '../../../assets/images/jeans.svg',
+    computer: '../../../assets/images/computer.jpg',
+    stage: '../../../assets/images/stage.jpg'
   }
 };
 

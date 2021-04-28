@@ -1,0 +1,49 @@
+<div class="card mb-3"  *ngIf="card?.content?.reverse">
+  <img
+    [src]="card?.image?.path"
+    class="card-img-top"
+    alt="{{card?.image?.altText}}"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{card?.content?.title}}</h5>
+    <p class="card-text">
+      {{card?.content?.description}}
+    </p>
+    <p class="card-text">
+      <small class="text-muted">{{card?.content?.bottomMutedText}}</small>
+    </p>
+  </div>
+</div>
+<div class="card mb-3"  *ngIf="!card?.content?.reverse">
+  <div class="card-body">
+    <h5 class="card-title">{{card?.content?.title}}</h5>
+    <p class="card-text">
+      {{card?.content?.description}}
+    </p>
+    <p class="card-text">
+      <small class="text-muted">{{card?.content?.bottomMutedText}}</small>
+    </p>
+  </div>
+  <img
+    [src]="card?.image?.path"
+    class="card-img-top"
+    alt="{{card?.image?.altText}}"
+  />
+</div>
+<!-- <div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">
+      This is a wider card with supporting text below as a natural lead-in to additional
+      content. This content is a little bit longer.
+    </p>
+    <p class="card-text">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </p>
+  </div>
+  <img
+    src="https://mdbootstrap.com/img/new/slides/042.jpg"
+    class="card-img-bottom"
+    alt="..."
+  />
+</div> -->

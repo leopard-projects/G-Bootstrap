@@ -1,0 +1,43 @@
+<div class="card mb-3">
+  <div class="row g-0" *ngIf="!content?.content?.reverse">
+    <div class="col-md-4 image_center">
+      <img
+        [src]="content?.image?.path"
+        alt="{{content?.image?.altText}}"
+        class="img-fluid"
+      />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{content?.content?.title}}</h5>
+        <p class="card-text">
+          {{content?.content?.description}}
+        </p>
+        <p class="card-text">
+          <small class="text-muted">{{content?.content?.bottomMutedText}}</small>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-0" *ngIf="content?.content?.reverse">
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{content?.content?.title}}</h5>
+        <p class="card-text">
+          {{content?.content?.description}}
+        </p>
+        <p class="card-text">
+          <small class="text-muted">{{content?.content?.bottomMutedText}}</small>
+        </p>
+      </div>
+    </div>
+    <div class="col-md-4 image_center">
+      <img
+        [src]="content?.image?.path"
+        alt="{{content?.image?.altText}}"
+        class="img-fluid"
+      />
+    </div>
+  </div>
+</div>

@@ -31,8 +31,8 @@ export class AppComponent implements OnInit {
     const linkOne = new LinkModel('Home', 'Home' ,true, undefined);
     linkModel.push(linkOne);
 
-    // const linkTwo = new LinkModel('Advisor', 'Advisor',  false, undefined);
-    // linkModel.push(linkTwo);
+    const linkTwo = new LinkModel('Advisor', 'Advisor',  false, undefined);
+    linkModel.push(linkTwo);
 
     // const linkThree = new LinkModel('Planner','Planner' , false, undefined);
     // linkModel.push(linkThree);
