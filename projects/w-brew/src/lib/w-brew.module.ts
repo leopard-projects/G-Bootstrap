@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { HorizontalCardComponent } from './components/horizontal-card/horizontal-card.component';
 import { FullCardComponent } from './components/full-card/full-card.component';
+import { NotificationComponent } from './components/notification/notification.component';
 
 
 
@@ -25,7 +26,8 @@ import { FullCardComponent } from './components/full-card/full-card.component';
     FooterComponent,
     PagenotfoundComponent,
     HorizontalCardComponent,
-    FullCardComponent
+    FullCardComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { FullCardComponent } from './components/full-card/full-card.component';
     FooterComponent,
     PagenotfoundComponent,
     HorizontalCardComponent,
-    FullCardComponent
+    FullCardComponent,
+    NotificationComponent
   ]
 })
 export class WBrewModule { }

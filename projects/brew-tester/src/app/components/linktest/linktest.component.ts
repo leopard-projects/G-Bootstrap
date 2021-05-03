@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Promotion } from 'w-brew';
@@ -20,7 +21,19 @@ export class LinktestComponent implements OnInit {
   horizontalCardTwo?: CardModel;
   fullCardOne?: CardModel;
   fullCardTwo?: CardModel;
+  notificationVarition?: string = 'primary';
+  notificationText?: string = '+';
+
+  students = {
+    dob: ''
+  }
+
   constructor(private store: Store<{promotion: {promotion: Promotion}}>) { }
+
+  checkDate() {
+    const dateSendingToServer = new DatePipe('en-US').transform(this.students.dob, 'dd/MM/yyyy')
+    console.log('dateSendingToServer :', dateSendingToServer);
+  }
 
   ngOnInit(): void {
     this.store.select('promotion').subscribe(data => {

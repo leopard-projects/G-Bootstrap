@@ -1,0 +1,31 @@
+<span [ngClass]="{
+  'badge bg-primary': (variation && variation === 'primary')
+}">{{labelText}}</span>
+
+<span *ngIf="labelText && (variation && variation === 'secondary')" [ngClass]="{
+  'badge bg-secondary': (variation && variation === 'secondary')
+}">{{labelText}}</span>
+
+<span *ngIf="labelText && (variation && variation === 'success')" [ngClass]="{
+  'badge bg-success': (variation && variation === 'success')
+}">{{labelText}}</span>
+
+<span *ngIf="labelText && (variation && variation === 'danger')" [ngClass]="{
+  'badge bg-danger': (variation && variation === 'danger')
+}">{{labelText}}</span>
+
+<span *ngIf="labelText  &&  (variation && variation === 'warning')" [ngClass]="{
+  'badge bg-warning': (variation && variation === 'warning')
+}">{{labelText}}</span>
+
+<span *ngIf="labelText && (variation && variation === 'info')" [ngClass]="{
+  'badge bg-info': (variation && variation === 'info')
+}">{{labelText}}</span>
+
+<span *ngIf="labelText && (variation && variation === 'light')" [ngClass]="{
+  'badge bg-light': (variation && variation === 'light')
+}">{{labelText}}</span>
+
+<span *ngIf="labelText && (variation && variation === 'dark')" [ngClass]="{
+  'badge bg-dark': (variation && variation === 'dark')
+}">{{labelText}}</span>

@@ -13,10 +13,11 @@ export * from './lib/components/navigation/navigation.component'
 export * from './lib/components/carousel/carousel.component';
 export * from './lib/components/wide-container/wide-container.component';
 export * from './lib/components/full-wide-container/full-wide-container.component';
-export *  from './lib/components/footer/footer.component';
+export * from './lib/components/footer/footer.component';
 export * from './lib/components/pagenotfound/pagenotfound.component';
 export * from './lib/components/horizontal-card/horizontal-card.component';
 export * from './lib/components/full-card/full-card.component';
+export * from './lib/components/notification/notification.component';
 
 /** Export of models */
 export * from './lib/models/promotion.model';

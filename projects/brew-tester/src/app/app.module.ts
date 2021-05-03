@@ -14,6 +14,7 @@ import { LinktestComponent } from './components/linktest/linktest.component';
 import { CarouselEffect } from './store/carousel/carousel.effect';
 import { carouselReducer } from './store/carousel/carousel.reducer';
 import { PromotionhookComponent } from './components/promotionhook/promotionhook.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { PromotionhookComponent } from './components/promotionhook/promotionhook
     WBrewModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
     StoreModule.forRoot<unknown, Action>(
       {
         promotion: promotionReducer,
