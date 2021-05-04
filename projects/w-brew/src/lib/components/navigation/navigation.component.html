@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav-main">
+<nav *ngIf="navigationStructure?.mode === 'dark'"
+  class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">{{navigationStructure?.title}}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
@@ -6,13 +7,59 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li *ngFor="let link of navigationStructure?.links;" [ngClass]="{'nav-item': link, 'active': link.isActive}">
-          <a class="nav-link" (click)="triggerred(link)">{{link?.nameOfLink}}</a>
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li *ngFor="let link of navigationStructure?.links;" class="nav-item" >
+          <a [ngClass]="{'nav-link': link, 'active': link.isActive}" (click)="triggerred(link)">{{link?.nameOfLink}}</a>
         </li>
       </ul>
       <form class="d-flex">
-        <lib-notification [variation]="'primary'" [labelText]="'+'" class="notification-center"></lib-notification>
+        <lib-notification [variation]="'primary'" [isRoundPill]="true" [labelText]="'99+'" class="notification-center"></lib-notification>
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<nav *ngIf="navigationStructure?.mode === 'primary'"
+  class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">{{navigationStructure?.title}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li *ngFor="let link of navigationStructure?.links;" class="nav-item" >
+          <a [ngClass]="{'nav-link': link, 'active': link.isActive}" (click)="triggerred(link)">{{link?.nameOfLink}}</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <lib-notification [variation]="'primary'" [isRoundPill]="true" [labelText]="'99+'" class="notification-center"></lib-notification>
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<nav *ngIf="navigationStructure?.mode === 'light'"
+  class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">{{navigationStructure?.title}}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li *ngFor="let link of navigationStructure?.links;" class="nav-item" >
+          <a [ngClass]="{'nav-link': link, 'active': link.isActive}" (click)="triggerred(link)">{{link?.nameOfLink}}</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <lib-notification [variation]="'primary'" [isRoundPill]="true" [labelText]="'99+'" class="notification-center"></lib-notification>
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>

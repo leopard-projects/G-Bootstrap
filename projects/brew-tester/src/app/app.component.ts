@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
     // const linkFive = new LinkModel('About Us', 'Aboutus' , false, undefined);
     // linkModel.push(linkFive);
 
-    this.navigation = new NavigationModel('Start.up', '', linkModel);
+    this.navigation = new NavigationModel('light','Start.up', '', linkModel);
   }
 
   public setTitle(newTitle: string): void {

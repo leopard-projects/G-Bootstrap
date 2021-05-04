@@ -1,31 +1,31 @@
 <span [ngClass]="{
-  'badge bg-primary': (variation && variation === 'primary')
+  'badge bg-primary': (variation && variation === 'primary'), 'rounded-pill': isRoundPill
 }">{{labelText}}</span>
 
 <span *ngIf="labelText && (variation && variation === 'secondary')" [ngClass]="{
-  'badge bg-secondary': (variation && variation === 'secondary')
+  'badge bg-secondary': (variation && variation === 'secondary'), 'rounded-pill': isRoundPill
 }">{{labelText}}</span>
 
 <span *ngIf="labelText && (variation && variation === 'success')" [ngClass]="{
-  'badge bg-success': (variation && variation === 'success')
+  'badge bg-success': (variation && variation === 'success'), 'rounded-pill': isRoundPill
 }">{{labelText}}</span>
 
 <span *ngIf="labelText && (variation && variation === 'danger')" [ngClass]="{
-  'badge bg-danger': (variation && variation === 'danger')
+  'badge bg-danger': (variation && variation === 'danger'), 'rounded-pill': isRoundPill
 }">{{labelText}}</span>
 
 <span *ngIf="labelText  &&  (variation && variation === 'warning')" [ngClass]="{
-  'badge bg-warning': (variation && variation === 'warning')
+  'badge bg-warning': (variation && variation === 'warning'), 'rounded-pill': isRoundPill
 }">{{labelText}}</span>
 
 <span *ngIf="labelText && (variation && variation === 'info')" [ngClass]="{
-  'badge bg-info': (variation && variation === 'info')
+  'badge bg-info': (variation && variation === 'info'), 'rounded-pill': isRoundPill
 }">{{labelText}}</span>
 
 <span *ngIf="labelText && (variation && variation === 'light')" [ngClass]="{
-  'badge bg-light': (variation && variation === 'light')
+  'badge bg-light': (variation && variation === 'light'), 'rounded-pill': isRoundPill
 }">{{labelText}}</span>
 
 <span *ngIf="labelText && (variation && variation === 'dark')" [ngClass]="{
-  'badge bg-dark': (variation && variation === 'dark')
+  'badge bg-dark': (variation && variation === 'dark'), 'rounded-pill': isRoundPill
 }">{{labelText}}</span>

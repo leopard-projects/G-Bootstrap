@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NotificationComponent implements OnInit {
   @Input() variation?: string;
+  @Input() isRoundPill?: boolean = false;
   @Input() labelText?: string;
   constructor() { }
 

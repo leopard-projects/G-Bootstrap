@@ -22,7 +22,7 @@ export class LinktestComponent implements OnInit {
   fullCardOne?: CardModel;
   fullCardTwo?: CardModel;
   notificationVarition?: string = 'primary';
-  notificationText?: string = '+';
+  notificationText?: string = '9+';
 
   students = {
     dob: ''
