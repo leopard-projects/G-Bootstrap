@@ -16,6 +16,10 @@ Library contains the component based on bootstrap 5.
 
 > Vertical Card
 
+> Promotion
+
+> Footer
+
 ## Code scaffolding
 
 Run `ng generate component component-name --project w-brew` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project w-brew`.
