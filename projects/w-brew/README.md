@@ -4,12 +4,12 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 Library contains the component based on bootstrap 5. 
 
--> Navigation with modes. 
--> Carousel
--> Notification
--> Full wide Card
--> Horizontal Card
--> Vertical Card
+> Navigation with modes
+> Carousel
+> Notification
+> Full wide Card
+> Horizontal Card
+> Vertical Card
 
 ## Code scaffolding
 
