@@ -1,4 +1,4 @@
-<span [ngClass]="{
+<span *ngIf="labelText && (variation && variation === 'primary')" [ngClass]="{
   'badge bg-primary': (variation && variation === 'primary'), 'rounded-pill': isRoundPill
 }">{{labelText}}</span>
 

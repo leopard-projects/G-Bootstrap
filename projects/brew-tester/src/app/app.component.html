@@ -1,14 +1,11 @@
-
 <!-- <app-demo></app-demo> -->
 
 <!-- <app-promotionhook *ngIf="isPromotionToDisplay"></app-promotionhook> -->
 <section>
-  <lib-navigation *ngIf="navigation"
-    [navigationStructure]="navigation"
-    (navigationTriggerred)="triggeredNavigation($event)"
-  ></lib-navigation>
+  <lib-navigation *ngIf="navigation" [navigationStructure]="navigation"
+    (navigationTriggerred)="triggeredNavigation($event)"></lib-navigation>
   <router-outlet></router-outlet>
-<!-- <app-demo></app-demo> -->
+  <!-- <app-demo></app-demo> -->
 </section>
 
 
@@ -32,6 +29,3 @@
 <div class="footer">
   <lib-footer></lib-footer>
 </div>
-
-
-
