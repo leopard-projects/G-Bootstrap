@@ -7,8 +7,20 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
+                echo "========Starting the build========"
                 // sh "/Applications/Docker.app/Contents/Resources/bin/docker build . -t tomcatwebapp:${env.BUILD_ID}"
-                sh "/Applications/Docker.app/Contents/Resources/bin/docker build --pull --rm -f Dockerfile -t gbootstrap:${env.BUILD_ID} ".""
+                sh "/Applications/Docker.app/Contents/Resources/bin/docker build --pull --rm -f Dockerfile -t gbootstrap:${env.BUILD_ID} ."
+            }
+            post{
+                always {
+                    echo "========always========"
+                }
+                success {
+                    echo "========Build executed successfully========"
+                }
+                failure{
+                    echo "========A execution failed========"
+                }
             }
         }
         stage ('Deploy') {
