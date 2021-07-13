@@ -1,10 +1,12 @@
 {
-  "name": "my-workspace",
+  "name": "G-Bootstrap",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "brewbuild": "ng build w-brew --prod",
+    "testerbuild": "ng build --prod --project=brew-tester --base-href=./",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
