@@ -25,8 +25,8 @@ pipeline {
         }
         stage ('Deploy') {
           steps {
-            sh "/Applications/Docker.app/Contents/Resources/bin/docker stop $(/Applications/Docker.app/Contents/Resources/bin/docker ps -aq)"
-            sh "/Applications/Docker.app/Contents/Resources/bin/docker rm $(/Applications/Docker.app/Contents/Resources/bin/docker ps -aq)"
+            sh "/Applications/Docker.app/Contents/Resources/bin/docker stop \$(/Applications/Docker.app/Contents/Resources/bin/docker ps -aq)"
+            sh "/Applications/Docker.app/Contents/Resources/bin/docker rm \$(/Applications/Docker.app/Contents/Resources/bin/docker ps -aq)"
             // sh '/Applications/Docker.app/Contents/Resources/bin/docker ps -f name=gbootstrap -q | xargs --no-run-if-empty /Applications/Docker.app/Contents/Resources/bin/docker container stop'
             // sh '/Applications/Docker.app/Contents/Resources/bin/docker container ls -a -fname=gbootstrap -q | xargs -r /Applications/Docker.app/Contents/Resources/bin/docker container rm'
             sh "/Applications/Docker.app/Contents/Resources/bin/docker run -d -p 4422:80 gbootstrap:${env.BUILD_ID}"
