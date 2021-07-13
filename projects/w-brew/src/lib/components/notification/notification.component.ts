@@ -1,21 +1,19 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'lib-notification',
-  templateUrl: './notification.component.html',
-  styleUrls: ['./notification.component.scss']
+  selector: "lib-notification",
+  templateUrl: "./notification.component.html",
+  styleUrls: ["./notification.component.scss"],
 })
 export class NotificationComponent implements OnInit {
   @Input() variation?: string;
   @Input() isRoundPill?: boolean = false;
   @Input() labelText?: string;
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
-    console.log('variation : ', this.variation);
-    console.log('labelText : ', this.labelText);
-    console.log('condition : ', (this.variation && this.variation === 'primary'));
-
+    // console.log('variation : ', this.variation);
+    // console.log('labelText : ', this.labelText);
+    // console.log('condition : ', (this.variation && this.variation === 'primary'));
   }
-
 }

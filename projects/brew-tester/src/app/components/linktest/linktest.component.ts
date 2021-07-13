@@ -31,7 +31,7 @@ export class LinktestComponent implements OnInit {
       this.students.dob,
       "dd/MM/yyyy"
     );
-    console.log("dateSendingToServer :", dateSendingToServer);
+    // console.log("dateSendingToServer :", dateSendingToServer);
   }
 
   ngOnInit(): void {
