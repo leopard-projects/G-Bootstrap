@@ -25,6 +25,8 @@ pipeline {
         }
         stage ('Deploy') {
           steps {
+            sh "/Applications/Docker.app/Contents/Resources/bin/docker stop $(docker ps -aq)"
+            sh "/Applications/Docker.app/Contents/Resources/bin/docker rm $(docker ps -aq)"
             sh "/Applications/Docker.app/Contents/Resources/bin/docker run -d -p 4422:80 gbootstrap:${env.BUILD_ID}"
           }
         }
