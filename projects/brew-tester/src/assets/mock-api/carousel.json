@@ -1,7 +1,7 @@
 [
   {
     "image": {
-      "path": "../../../assets/images/woman-camera.jpg",
+      "path": "http://localhost:8989/brew/assets/images/woman-camera.jpg",
       "altText": "Woman taking picture with a camera"
     },
     "isActive": true,
@@ -10,7 +10,7 @@
   },
   {
     "image": {
-      "path": "../../../assets/images/spiderweb.jpg",
+      "path": "http://localhost:8989/brew/assets/images/spiderweb.jpg",
       "altText": "A wet spiderweb"
     },
     "isActive": false,
@@ -19,7 +19,7 @@
   },
   {
     "image": {
-      "path": "../../../assets/images/hearthand.jpg",
+      "path": "http://localhost:8989/brew/assets/images/hearthand.jpg",
       "altText": "Two hands making a hearb"
     },
     "isActive": false,
