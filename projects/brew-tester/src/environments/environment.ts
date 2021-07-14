@@ -5,17 +5,18 @@
 export const environment = {
   production: false,
   api: {
-    promotion: '../../assets/mock-api/promotion.json',
-    carousel: '../../assets/mock-api/carousel.json',
-    widecontainerone: '../../assets/mock-api/wide-container-one.json',
-    macbook: '../../../assets/images/macbook.png',
-    bradelvis: '../../../assets/images/brad-elvis.png',
-    ipad: '../../../assets/images/ipad.png',
-    macbook2: '../../../assets/images/macbook-2.png',
-    jeans: '../../../assets/images/jeans.svg',
-    computer: '../../../assets/images/computer.jpg',
-    stage: '../../../assets/images/stage.jpg'
-  }
+    promotion: "http://localhost:8989/brew/assets/mock-api/promotion.json",
+    carousel: "http://localhost:8989/brew/assets/mock-api/carousel.json",
+    widecontainerone:
+      "http://localhost:8989/brew/assets/mock-api/wide-container-one.json",
+    macbook: "http://localhost:8989/brew/assets/images/macbook.png",
+    bradelvis: "http://localhost:8989/brew/assets/images/brad-elvis.png",
+    ipad: "http://localhost:8989/brew/assets/images/ipad.png",
+    macbook2: "http://localhost:8989/brew/assets/images/macbook-2.png",
+    jeans: "http://localhost:8989/brew/assets/images/jeans.svg",
+    computer: "http://localhost:8989/brew/assets/images/computer.jpg",
+    stage: "http://localhost:8989/brew/assets/images/stage.jpg",
+  },
 };
 
 /*

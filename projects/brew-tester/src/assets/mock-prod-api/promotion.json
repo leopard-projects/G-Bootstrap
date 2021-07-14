@@ -1,9 +1,9 @@
 {
-  "heading":  "Qualify for free subscription ...",
+  "heading": "Qualify for free subscription ...",
   "subHeading": "Just like the old Bootstrap, but better. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatum quis, necessitatibus molestias maiores accusantium alias veniam eum labore rerum earum.",
   "isForm": true,
   "formPrimaryButton": "Register",
-  "backgroundImageUrl": "../../../w-beta/assets/images/great-bear-1426516.svg",
+  "backgroundImageUrl": "http://localhost:8989/brew/assets/images/great-bear-1426516.svg",
   "controlConfiguration": {
     "name": "text",
     "email": "email"
