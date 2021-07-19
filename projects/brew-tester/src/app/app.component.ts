@@ -12,6 +12,8 @@ import { NavigationModel, LinkModel } from "w-brew";
 export class AppComponent implements OnInit {
   navigation?: NavigationModel;
   isPromotionToDisplay: boolean = true;
+  regex: RegExp = new RegExp(/^\d*\.?\d{0,3}$/g);
+  InputValue: any;
   constructor(
     private titleService: Title,
     private router: Router,

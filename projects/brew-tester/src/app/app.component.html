@@ -2,6 +2,10 @@
 
 <!-- <app-promotionhook *ngIf="isPromotionToDisplay"></app-promotionhook> -->
 <section>
+  <!-- <input type="textbox" [(ngModel)]="InputValue" appTwodigitdecimalnumber> -->
+  <h3>Input Text:</h3>
+  <input type="text" *ngIf="regex" [(ngModel)]="InputValue" [libNumberordecimals]="regex">
+
   <lib-navigation *ngIf="navigation" [navigationStructure]="navigation"
     (navigationTriggerred)="triggeredNavigation($event)"></lib-navigation>
   <router-outlet></router-outlet>

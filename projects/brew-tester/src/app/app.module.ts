@@ -15,6 +15,7 @@ import { CarouselEffect } from "./store/carousel/carousel.effect";
 import { carouselReducer } from "./store/carousel/carousel.reducer";
 import { PromotionhookComponent } from "./components/promotionhook/promotionhook.component";
 import { FormsModule } from "@angular/forms";
+import { TwodigitdecimalnumberDirective } from './directives/twodigitdecimalnumber.directive';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { FormsModule } from "@angular/forms";
     DemoComponent,
     LinktestComponent,
     PromotionhookComponent,
+    TwodigitdecimalnumberDirective,
   ],
   imports: [
     BrowserModule,

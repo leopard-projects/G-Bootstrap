@@ -1,44 +1,46 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { DemoComponent } from './components/demo/demo.component';
-import { LinktestComponent } from './components/linktest/linktest.component';
-import { PagenotfoundComponent } from 'w-brew';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { DemoComponent } from "./components/demo/demo.component";
+import { LinktestComponent } from "./components/linktest/linktest.component";
+import { PagenotfoundComponent } from "w-brew";
 
 const routes: Routes = [
   {
-    path: 'Home',
-    component: DemoComponent
+    path: "Home",
+    component: DemoComponent,
   },
   {
-    path: 'Advisor',
-    component: LinktestComponent
+    path: "Advisor",
+    component: LinktestComponent,
   },
   {
-    path: 'Planner',
-    component: LinktestComponent
+    path: "Planner",
+    component: LinktestComponent,
   },
   {
-    path: 'Contactus',
-    component: LinktestComponent
+    path: "Contactus",
+    component: LinktestComponent,
   },
   {
-    path: 'Aboutus',
-    component: LinktestComponent
+    path: "Aboutus",
+    component: LinktestComponent,
   },
   {
-    path: '', redirectTo: '/Home', pathMatch: 'full'
+    path: "",
+    redirectTo: "/Home",
+    pathMatch: "full",
   },
   {
-    path: '**', component: PagenotfoundComponent
-  } // PageNotFoundComponent TO-DO
+    path: "**",
+    component: PagenotfoundComponent,
+  }, // PageNotFoundComponent TO-DO
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
-
+export class AppRoutingModule {}
 
 // {   path: '',
 //       redirectTo: 'home/home',
