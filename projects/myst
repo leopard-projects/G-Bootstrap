@@ -1,0 +1,80 @@
+import boto3
+import json
+import pickle
+import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
+
+# Bedrock runtime client
+bedrock = boto3.client("bedrock-runtime", region_name="us-east-1")
+MODEL_ID = "anthropic.claude-3-7-sonnet-20250219-v1:0"
+
+# ---- Load Knowledge Base (precomputed embeddings + texts) ----
+with open("knowledge_base.pkl", "rb") as f:
+    kb_data = pickle.load(f)   # Expecting {"embeddings": np.array, "texts": list}
+
+kb_embeddings = np.array(kb_data["embeddings"])
+kb_texts = kb_data["texts"]
+
+conversation_history = []
+
+
+# ---- Embedding function (Titan) ----
+def embed_text(text: str) -> np.ndarray:
+    embed_model = "amazon.titan-embed-text-v1"
+    body = {"inputText": text}
+    resp = bedrock.invoke_model(modelId=embed_model, body=json.dumps(body))
+    vec = json.loads(resp["body"].read())["embedding"]
+    return np.array(vec)
+
+
+# ---- Retrieve context ----
+def retrieve_context(query: str, top_k=3):
+    q_vec = embed_text(query).reshape(1, -1)
+    sims = cosine_similarity(q_vec, kb_embeddings)[0]
+    top_indices = sims.argsort()[-top_k:][::-1]
+    return [kb_texts[i] for i in top_indices]
+
+
+# ---- Chat with Claude ----
+def chat_with_claude(user_input: str) -> str:
+    conversation_history.append({"role": "user", "content": user_input})
+
+    # Retrieve relevant docs
+    retrieved_docs = retrieve_context(user_input, top_k=3)
+    context = "\n\n".join(retrieved_docs)
+
+    system_prompt = (
+        "You are a helpful assistant. Use the following context from the knowledge base "
+        "to answer the question as accurately as possible.\n\n"
+        f"Context:\n{context}\n\n"
+        "If the context is not relevant, fall back to your own reasoning."
+    )
+
+    body = {
+        "anthropic_version": "bedrock-2023-05-31",
+        "system": system_prompt,
+        "messages": conversation_history,
+        "max_tokens": 500
+    }
+
+    response = bedrock.invoke_model(modelId=MODEL_ID, body=json.dumps(body))
+    result = json.loads(response["body"].read())
+
+    reply_text = next(
+        (c["text"] for c in result.get("content", []) if c.get("type") == "text"),
+        ""
+    )
+
+    conversation_history.append({"role": "assistant", "content": reply_text})
+    return reply_text
+
+
+# ---- Main loop ----
+if __name__ == "__main__":
+    print("🤖 Claude 3.7 + Knowledge Base (turn-based chat) | type 'exit' to quit")
+    while True:
+        user_input = input("\nYou: ")
+        if user_input.strip().lower() in ["exit", "quit"]:
+            break
+        reply = chat_with_claude(user_input)
+        print("Claude:", reply)
