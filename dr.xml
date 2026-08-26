@@ -1,0 +1,101 @@
+<mxGraphModel dx="900" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="900" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="ring" value="" style="ellipse;fillColor=none;strokeColor=#cccccc;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="145" y="145" width="510" height="510" as="geometry" />
+    </mxCell>
+    <mxCell id="vibeIcon" value="&#10022;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=28;fontColor=#3366cc;" vertex="1" parent="1">
+      <mxGeometry x="350" y="350" width="100" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="vibeTitle" value="Vibe" style="text;html=1;align=center;fontSize=15;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="330" y="452" width="140" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="vibeSub" value="AI SDLC platform" style="text;html=1;align=center;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+      <mxGeometry x="320" y="472" width="160" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="reqIcon" value="&#9776;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontColor=#3366cc;" vertex="1" parent="1">
+      <mxGeometry x="372" y="112" width="56" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="reqTitle" value="Requirements" style="text;html=1;align=center;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="300" y="174" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="reqSub" value="Drafts + checks INVEST" style="text;html=1;align=center;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+      <mxGeometry x="290" y="196" width="220" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="reqActor" value="BA/PO" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=none;fontColor=#3366cc;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="340" y="216" width="120" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="reqDest" value="Jira + Confluence" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;fontColor=#666666;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="310" y="240" width="180" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="planIcon" value="&#128197;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=20;fontColor=#7a4d99;" vertex="1" parent="1">
+      <mxGeometry x="619" y="292" width="56" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="planTitle" value="Planning" style="text;html=1;align=center;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="547" y="354" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="planSub" value="Estimates + checks readiness" style="text;html=1;align=center;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+      <mxGeometry x="537" y="376" width="220" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="planActor" value="PM / scrum" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=none;fontColor=#7a4d99;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="587" y="396" width="120" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="planDest" value="Jira" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;fontColor=#666666;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="597" y="420" width="100" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="archIcon" value="&#9651;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=20;fontColor=#b8860b;" vertex="1" parent="1">
+      <mxGeometry x="525" y="582" width="56" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="archTitle" value="Architecture &amp; design" style="text;html=1;align=center;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="453" y="644" width="200" height="34" as="geometry" />
+    </mxCell>
+    <mxCell id="archSub" value="Proposes options, logs ADRs" style="text;html=1;align=center;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+      <mxGeometry x="443" y="680" width="220" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="archActor" value="Architect" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=none;fontColor=#b8860b;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="493" y="700" width="120" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="archDest" value="Confluence" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;fontColor=#666666;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="483" y="724" width="140" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="devIcon" value="&lt;/&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;fontColor=#4a8a3d;" vertex="1" parent="1">
+      <mxGeometry x="219" y="582" width="56" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="devTitle" value="Development" style="text;html=1;align=center;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="147" y="644" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="devSub" value="Codes, verifies tests" style="text;html=1;align=center;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+      <mxGeometry x="137" y="666" width="220" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="devActor" value="Tech lead" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=none;fontColor=#4a8a3d;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="187" y="686" width="120" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="devDest" value="GitLab" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;fontColor=#666666;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="197" y="710" width="100" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="testIcon" value="&#8593;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=22;fontColor=#a3372f;" vertex="1" parent="1">
+      <mxGeometry x="125" y="292" width="56" height="56" as="geometry" />
+    </mxCell>
+    <mxCell id="testTitle" value="Testing &amp; release" style="text;html=1;align=center;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="53" y="354" width="200" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="testSub" value="Verifies, monitors release" style="text;html=1;align=center;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+      <mxGeometry x="43" y="376" width="220" height="16" as="geometry" />
+    </mxCell>
+    <mxCell id="testActor" value="QA / SRE" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=none;fontColor=#a3372f;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="93" y="396" width="120" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="testDest" value="Confluence doc" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;fontColor=#666666;fontSize=10;" vertex="1" parent="1">
+      <mxGeometry x="73" y="420" width="160" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="e1" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#cccccc;" edge="1" parent="1" source="vibeIcon" target="reqIcon"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e2" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#cccccc;" edge="1" parent="1" source="vibeIcon" target="planIcon"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e3" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#cccccc;" edge="1" parent="1" source="vibeIcon" target="archIcon"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#cccccc;" edge="1" parent="1" source="vibeIcon" target="devIcon"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e5" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#cccccc;" edge="1" parent="1" source="vibeIcon" target="testIcon"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="loopIcon" value="&#8635;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#cccccc;fontSize=13;fontColor=#999999;" vertex="1" parent="1">
+      <mxGeometry x="285" y="180" width="26" height="26" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
