@@ -2,9 +2,11 @@
   <root>
     <mxCell id="0" />
     <mxCell id="1" parent="0" />
-    <mxCell id="ring" value="" style="ellipse;fillColor=none;strokeColor=#cccccc;dashed=1;" vertex="1" parent="1">
+
+    <mxCell id="ring" value="" style="ellipse;fillColor=none;strokeColor=#999999;dashed=1;" vertex="1" parent="1">
       <mxGeometry x="145" y="145" width="510" height="510" as="geometry" />
     </mxCell>
+
     <mxCell id="vibeIcon" value="&#10022;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=28;fontColor=#3366cc;" vertex="1" parent="1">
       <mxGeometry x="350" y="350" width="100" height="100" as="geometry" />
     </mxCell>
@@ -14,6 +16,7 @@
     <mxCell id="vibeSub" value="AI SDLC platform" style="text;html=1;align=center;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
       <mxGeometry x="320" y="472" width="160" height="16" as="geometry" />
     </mxCell>
+
     <mxCell id="reqIcon" value="&#9776;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;fontColor=#3366cc;" vertex="1" parent="1">
       <mxGeometry x="372" y="112" width="56" height="56" as="geometry" />
     </mxCell>
@@ -29,6 +32,7 @@
     <mxCell id="reqDest" value="Jira + Confluence" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;fontColor=#666666;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="310" y="240" width="180" height="20" as="geometry" />
     </mxCell>
+
     <mxCell id="planIcon" value="&#128197;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=20;fontColor=#7a4d99;" vertex="1" parent="1">
       <mxGeometry x="619" y="292" width="56" height="56" as="geometry" />
     </mxCell>
@@ -44,6 +48,7 @@
     <mxCell id="planDest" value="Jira" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;fontColor=#666666;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="597" y="420" width="100" height="20" as="geometry" />
     </mxCell>
+
     <mxCell id="archIcon" value="&#9651;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=20;fontColor=#b8860b;" vertex="1" parent="1">
       <mxGeometry x="525" y="582" width="56" height="56" as="geometry" />
     </mxCell>
@@ -59,6 +64,7 @@
     <mxCell id="archDest" value="Confluence" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;fontColor=#666666;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="483" y="724" width="140" height="20" as="geometry" />
     </mxCell>
+
     <mxCell id="devIcon" value="&lt;/&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;fontColor=#4a8a3d;" vertex="1" parent="1">
       <mxGeometry x="219" y="582" width="56" height="56" as="geometry" />
     </mxCell>
@@ -74,6 +80,7 @@
     <mxCell id="devDest" value="GitLab" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;fontColor=#666666;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="197" y="710" width="100" height="20" as="geometry" />
     </mxCell>
+
     <mxCell id="testIcon" value="&#8593;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=22;fontColor=#a3372f;" vertex="1" parent="1">
       <mxGeometry x="125" y="292" width="56" height="56" as="geometry" />
     </mxCell>
@@ -89,11 +96,13 @@
     <mxCell id="testDest" value="Confluence doc" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;fontColor=#666666;fontSize=10;" vertex="1" parent="1">
       <mxGeometry x="73" y="420" width="160" height="20" as="geometry" />
     </mxCell>
+
     <mxCell id="e1" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#cccccc;" edge="1" parent="1" source="vibeIcon" target="reqIcon"><mxGeometry relative="1" as="geometry" /></mxCell>
     <mxCell id="e2" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#cccccc;" edge="1" parent="1" source="vibeIcon" target="planIcon"><mxGeometry relative="1" as="geometry" /></mxCell>
     <mxCell id="e3" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#cccccc;" edge="1" parent="1" source="vibeIcon" target="archIcon"><mxGeometry relative="1" as="geometry" /></mxCell>
     <mxCell id="e4" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#cccccc;" edge="1" parent="1" source="vibeIcon" target="devIcon"><mxGeometry relative="1" as="geometry" /></mxCell>
     <mxCell id="e5" style="edgeStyle=none;html=1;endArrow=none;strokeColor=#cccccc;" edge="1" parent="1" source="vibeIcon" target="testIcon"><mxGeometry relative="1" as="geometry" /></mxCell>
+
     <mxCell id="loopIcon" value="&#8635;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#cccccc;fontSize=13;fontColor=#999999;" vertex="1" parent="1">
       <mxGeometry x="285" y="180" width="26" height="26" as="geometry" />
     </mxCell>
